@@ -8,7 +8,7 @@ export const SocketProvider = ({children})=>{
 
     const connectSocket = ()=>{
         if(!socket){
-            const newSocket = io("https://project-server-pczr.onrender.com");
+            const newSocket = io("https://project-serverfinal.onrender.com");
             setsocket(newSocket);
             return newSocket;
         }
