@@ -8,7 +8,7 @@ export const SocketProvider = ({children})=>{
 
     const connectSocket = ()=>{
         if(!socket){
-            const newSocket = io("https://project-server-h1po.onrender.com");
+            const newSocket = io("http://localhost:3000");
             setsocket(newSocket);
             return newSocket;
         }
